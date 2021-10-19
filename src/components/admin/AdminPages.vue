@@ -1,0 +1,35 @@
+<template>
+  <div class="admin-pages">
+    <PageTitle icon="fa fa-cogs" main="Adminstração do Sistema"
+      sub="Cadastro & Cia" />
+    <div class="admin-pages-tabs">
+      <b-card no-body>
+        <b-tabs card>
+          <b-tab title="Artigos" active>
+            <h1>Artigo</h1>
+          </b-tab>
+          <b-tab title="Categorias">
+            <h1>Categorias</h1>
+          </b-tab>
+          <b-tab title="Usuários">
+            <h1>Usuários</h1>
+          </b-tab>
+        </b-tabs>
+      </b-card>
+    </div>
+  </div>
+</template>
+
+<script>
+import PageTitle from "../templates/PageTitle.vue";
+
+export default {
+  name: "AdminPages",
+  components: {
+    PageTitle,
+  },
+};
+</script>
+
+<style>
+</style>
