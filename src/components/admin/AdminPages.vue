@@ -6,13 +6,13 @@
       <b-card no-body>
         <b-tabs card>
           <b-tab title="Artigos" active>
-            <h1>Artigo</h1>
+            <ArticleAdmin />
           </b-tab>
           <b-tab title="Categorias">
-            <h1>Categorias</h1>
+            <CategoryAdmin />
           </b-tab>
           <b-tab title="Usuários">
-            <h1>Usuários</h1>
+            <UserAdmin />
           </b-tab>
         </b-tabs>
       </b-card>
@@ -22,11 +22,17 @@
 
 <script>
 import PageTitle from "../templates/PageTitle.vue";
+import ArticleAdmin from "./ArticleAdmin.vue";
+import CategoryAdmin from "./CategoryAdmin.vue";
+import UserAdmin from "./UserAdmin.vue";
 
 export default {
   name: "AdminPages",
   components: {
     PageTitle,
+    ArticleAdmin,
+    CategoryAdmin,
+    UserAdmin
   },
 };
 </script>
